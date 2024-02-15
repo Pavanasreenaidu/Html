@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Movie reviews</title>
+    <style>
+        h1{
+            background-color:burlywood;border: 5px solid blanchedalmond;text-align: center;color: chocolate
+        }
+        p{
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        span{
+            font-size: x-large;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+        }
+        
+            </style>
+</head>
+<body>
+    <h1 >Movie Reviews </h1>
+    <h2 style="color: rgb(11, 11, 11); text-align: left;">Movie Name: <span>JELSA</span></h2>
+    <h3>Rating: <span>⭐⭐⭐⭐/⭐⭐⭐⭐⭐</span> </h3>
+    <img src="pk3.jpg">
+    
+    
+</body>
+</html>
