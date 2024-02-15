@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Text and Flag</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #movingText {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 24px;
+      color: blue;
+    }
+
+    #germanyFlag {
+      position: absolute;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="movingText">Hello, this is a moving text!</div>
+  <canvas id="germanyFlag" width="300" height="200"></canvas>
+
+  <script>
+    const movingText = document.getElementById('movingText');
+    const germanyFlagCanvas = document.getElementById('germanyFlag');
+    const flagContext = germanyFlagCanvas.getContext('2d');
+    let textDirection = 1; // 1 for right, -1 for left
+    let flagSize = 300;
+
+    function animateText() {
+      const screenWidth = window.innerWidth;
+
+      let currentLeft = parseInt(movingText.style.left) || 0;
+      currentLeft += 2 * textDirection;
+
+      if (currentLeft > screenWidth || currentLeft < -movingText.clientWidth) {
+        textDirection *= -1;
+      }
+
+      movingText.style.left = currentLeft + 'px';
+      requestAnimationFrame(animateText);
+    }
+
+    function drawGermanyFlag() {
+      flagContext.fillStyle = 'black';
+      flagContext.fillRect(0, 0, flagSize, flagSize / 3);
+      flagContext.fillStyle = 'red';
+      flagContext.fillRect(0, flagSize / 3, flagSize, flagSize / 3);
+      flagContext.fillStyle = 'yellow';
+      flagContext.fillRect(0, (flagSize / 3) * 2, flagSize, flagSize / 3);
+    }
+
+    function resizeCanvas() {
+      germanyFlagCanvas.width = flagSize;
+      germanyFlagCanvas.height = flagSize / 3;
+      drawGermanyFlag();
+    }
+
+    movingText.style.top = (window.innerHeight / 2 - movingText.clientHeight / 2) + 'px';
+    animateText();
+    drawGermanyFlag();
+
+    germanyFlagCanvas.addEventListener('dblclick', () => {
+      flagSize -= 10;
+      resizeCanvas();
+    });
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+    });
+  </script>
+</body>
+</html>
