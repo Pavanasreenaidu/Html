@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pavanasree-Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #dbdad5;
+            color: #b38404;
+        }
+        img{
+            float: right;
+            margin-top: 150px;
+            margin-right: 100px;
+            border-radius: 50%;
+        }
+
+        header {
+            background-color: #7646a3;
+            color: #070707;
+            padding: 10px 0;
+            text-align: center;
+            float:"right"
+        }
+
+        section {
+            padding: 20px ;
+        }
+
+        .jumbotron {
+            background-color: #4b2e47;
+            color: #dff2f2;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .skills {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .project-card {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: white;
+            color: #af77b1;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .pavanasree{
+            display: inline;
+            height: 2px;
+            width: 1px;
+        }
+        .navbar .nav-item:hover .nav-link{
+            color:rgb(18, 19, 18)
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Alahari Pavana Sree</h1>
+        <p>coder</p>
+        <img src="sree.jpg" alt="Me" id="profilePic" height="40%" width="20%" float="right">
+    </header>
+
+    <section>
+        <div class="container">
+                <h2>Hii everyone!I'm Alahari Pavana sree</h2>
+                <p>Welcome to my portfolio. I'm a coder and learning new skills.</p>
+            </div>
+            <form>
+           <fieldset>
+            <h3>MY Skills</h3>
+            <ol class=" My skills">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">C<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">java<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">DSA<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">SQL<span class="sr-only">(current)</span></a>
+                </li>
+            </ol>
+        </fieldset>
+    </form>
+    <h3>HOBBIES</h3>
+            <ul class=" My certificates">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Photography<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Traveling<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Reading<span class="sr-only">(current)</span></a>
+                </li>
+                 
+            </ul>
+
+            <h3>CERTFICATES</h3>
+            <ul class=" My certificates">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">salesforce admin superbadge<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">matlab internship certificate<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">internpe certificate<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">immensphere on pythn programming <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            
+            <h3>SKILLS</h3>
+            <ul class=" My details">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Problem solving<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Coding knoweledge<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Collaborative<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Self confidence<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <h3>INFO DETAILS</h3>
+            <ul class=" My details">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">My self Pavana sree<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Birthday on 13 Jan 2004<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Living in Vijayawada<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">9848988899 is my contact<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+                
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+ <footer>
+   <div class="pavanasree">
+    <img  height="50px" width="50px" src="email.png" alt="email icon"><br>
+    <img  height="50px" width="50px" src="linkdin.png" alt="linkdin icon"><br>
+    <img height="50px" width="50px" src="youtube.jpeg" alt="youtube icon">
+
+   </div>
+        <p>&copy; 2023-Sree-coder. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
