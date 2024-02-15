@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+<style>
+    container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form {
+            display: flex;
+            width: 100%;
+        }
+
+        fieldset  {
+            width: 30%;
+            box-sizing: border-box; 
+        }
+        h1{
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+    <h1>Weather Cast</h1>
+    <div class="container">
+        <form action="#">
+            <fieldset style="background-color: lightblue;">
+                <legend><h1>Information</h1></legend>
+                <p>
+                    Todays Weather will be some what humidity,I like this it maybe carrion till few more days.
+                </p>
+                <p>But there is chance of windy🍃 and cloudy😶‍🌫️ at this evening.There is chance of heavy wind, so be carefull.</p>
+                </fieldset >
+                <fieldset style="background-color: bisque;">
+                    <legend><h1>Weather on next days </h1></legend>
+                    <p><span>Todays   -----cloudy😶‍🌫️   ---- 15degrees  </span></p> 
+                     <p>Saturday    -----sunny☀️   ----35degrees</p>
+                     <p>Sunday   -----sunny☀️     ----37degrees</p>
+                     <p>Monday   -----sunny☀️     ----38degrees</p>
+                     <p>Tuesday   -----rainy⛈️    ----10degrees</p>
+                     </fieldset>
+                     <fieldset>
+                        <img src="pk3.jpg">
+                     </fieldset>
+                     <script>
+                        var canvas = document.getElementById("myCanvas");
+                        var c = canvas.getContext("2d");
+                        c.fillStyle="red";
+                        c.fillRect(100,100,100,100);
+                        c.beginPath();
+                        c.moveTo(50,300);
+                        c.lineTo(300,100);
+                        c.strokeStyle="blue";
+                        c.stroke();
+                        </script>
+</body>
+</html>
